@@ -1,0 +1,21 @@
+<p>flipkart works!</p>
+<div class="container">
+    <div class="row">
+    <div class="card col-lg-3 col-md-4 col-sm-6 col-12" style="width:25rem" *ngFor="let abh of abh">
+      <img class="card-img-top" src="{{abh.image}}" alt="Card image" style="width:100%">
+      <hr>
+      <div class="card-body">
+        <p>Id:{{abh.id}}</p>
+        <p>Title:{{abh.title}}</p>
+        <p>Price:{{abh.price}}</p>
+        <p>Description:{{abh.description}}</p>
+        <p>Category:{{abh.category}}</p>
+        <p>Rate:{{abh.rating.rate}}</p>
+        <p>Count:{{abh.rating.count}}</p>
+        <div class="buttons1">
+            <a href="#" class="btn btn-primary">Add to cart</a>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    </div>
+</div>

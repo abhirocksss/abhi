@@ -1,0 +1,18 @@
+<p>create-acc works!</p>
+<div>
+    <h3>CREAT ACCOUNT</h3>
+    <input type="text"[(ngModel)]="name1"class="form-control" placeholder="NAME"><br>
+    <input type="=text"[(ngModel)]="email"class="form-control" placeholder="EMAIL:" ><br>
+    <input type="text"[(ngModel)]="phone"class="form-control" placeholder="PHONE:"><br>
+    <input type="=text"[(ngModel)]="city"class="form-control" placeholder="CITY"><br>
+    <button (click)="signin()"  class="btn btn-danger">sign in</button>
+    <h5>list of users</h5>
+    <table class="table">
+        <tr *ngFor="let name1 of number9">
+            <td>{{name1.name1}}</td>
+            <td>{{name1.email}}</td>
+            <td>{{name1.phone}}</td>
+            <td>{{name1.city}}</td>
+        </tr>
+    </table>
+    </div>

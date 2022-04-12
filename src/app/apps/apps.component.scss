@@ -1,0 +1,19 @@
+.parent{
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid black;
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{ 
+    background-color: rgb(6, 135, 55);
+}
+
+.shown{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}

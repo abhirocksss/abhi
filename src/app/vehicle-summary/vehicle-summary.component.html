@@ -1,0 +1,64 @@
+<p>vehicle-summary works!</p>
+<input [(ngModel)]="fliterTerm" type="text">
+<button (click)="fliter()">fliter</button>
+
+<select [(ngModel)]="column">
+    <option value="color">color</option><br>
+    <option  value="vehicle">vehicle</option><br>
+    <option value="id">id</option><br></select>
+    <select [(ngModel)]="order">
+    <option value="asc">asc</option><br>
+    <option value="desc">des</option><br>
+</select>
+    <button (click)= "sort()">sort</button>
+    <select [(ngModel)]="page">
+        <option value="1">1</option><br>
+        <option value="2">2</option><br>
+        <option value="3">3</option><br>
+        <option value="4">4</option><br>
+        <option value="5">5</option><br>
+    </select>
+    <select [(ngModel)]="limit">
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button (click)= "pull()">pull</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>Vehicle</th>
+        <th>manufacturer</th>
+        <th>model</th>
+        <th>type</th>
+        <th>fuel</th>
+        <th>color</th>
+        <th>image</th>
+        <th>id</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr
+         *ngFor="let abc of abc">
+           <!-- <ng-container *ngIf="user.manufacturer =='Ford'|| user.manufacturer=='Honda'">-->
+           <td>{{abc.Vehicle}}</td>
+            <td>{{abc.manufacturer|json}}</td>
+
+            <td>{{abc.model}}</td>
+            <!--<td [ngClass]="user.fuel=='Electric'?'green':'fuel'" [ngClass]="user.fuel=='Hybrid'?'yellow':'green'">{{user.fuel}}</td> >-->
+            <td>{{abc.color}}</td>
+            <td><img src="{{abc.image}}" width="80cm" height="50cm" alt="image" class="src"></td>
+        
+
+            <td>{{abc.id}}</td>
+           <!-- </ng-container>-->
+
+                
+
+
+        </tr>
+    </tbody>
+</table>
+

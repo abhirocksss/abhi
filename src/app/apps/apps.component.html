@@ -1,0 +1,91 @@
+<p>apps works!</p>
+
+<div class="abc">
+<h1>calculator</h1>
+<input type="number"[(ngModel)]="num1"><br>
+<input type="number"[(ngModel)]="num2"><br>
+<button (click)="sum()">+</button>
+<button>-</button>
+<button>*</button>
+<button>/</button>
+</div>
+<br>
+<div class="def">
+<h1>rectangle</h1>
+<input type="number"[(ngModel)]="num3">
+<input type="number"[(ngModel)]="num4">
+<button (click)="area()">area</button>
+<p>area:{{num5}}</p>
+<button>perim</button>
+</div>
+<div class="ghi">
+<h1>Event registration</h1>
+<input type="text"[(ngModel)]="name">
+<button (click)="register()">register</button>
+<ul>
+    <li *ngFor="let name of names">
+       {{name}}
+    </li>
+</ul>
+</div>
+<h1>cart</h1>
+<label>product</label><input type="text"[(ngModel)]="product">
+<label>quantity</label><input type="text"[(ngModel)]="quantity">
+<label>price</label><input type="text"[(ngModel)]="price">
+<button (click)="cart()">cart</button>
+<table>
+    <tbody>
+        <tr *ngFor="let product of users">
+            
+            <td>{{product.product}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.price}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>create account</h1>
+<label>sname</label><input type="text"[(ngModel)]="sname">
+<label>email</label><input type="text"[(ngModel)]="email">
+<label>phone</label><input type="text"[(ngModel)]="phone">
+<label>city</label><input type="text"[(ngModel)]="city">
+<button (click)="signup()">signup</button>
+<table>
+    <tbody>
+        <tr *ngFor="let sname of abc">
+            <td>{{sname.sname}}</td>
+            <td>{{sname.email}}</td>
+            <td>{{sname.phone}}</td>
+            <td>{{sname.city}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+<div class="parent" (click)="change()" [ngClass]="isRed?'red':'green'"></div>
+<div class="parent" (click)="change1()"[ngClass]="ishide? 'show':'hide'"></div>
+<button (click)="change1()">hide</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

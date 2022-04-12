@@ -1,0 +1,44 @@
+
+.rightchild1{
+    height: 30vh;
+    width:20vw ;
+  
+
+}
+.rightchild2{
+    height: 30vh;
+    width:20vw ; 
+    
+   
+    
+}
+.rightchild3{
+    height: 30vh;
+    width: 20vw;
+    
+}
+.right1{
+    justify-content: space-around;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.bottom1{
+    height:50vh;
+    width: 40vw;
+    
+}
+.bottom2{
+    height:50vh;
+    width: 40vw;
+    
+}
+.total{
+    display: flex;
+}

@@ -1,0 +1,23 @@
+<p>create-vehicle works!</p>
+<h3>CREAT vehicle</h3>
+    <input type="text"[(ngModel)]="id"class="form-control" placeholder="id"><br>
+    <input type="=text"[(ngModel)]="vehicle"class="form-control" placeholder="vehicle:" ><br>
+    <input type="text"[(ngModel)]="manufacturer"class="form-control" placeholder="manufacturer:"><br>
+    <input type="=text"[(ngModel)]="model"class="form-control" placeholder="model"><br>
+    <input type="text"[(ngModel)]="type"class="form-control" placeholder="type"><br>
+    <input type="=text"[(ngModel)]="fuel"class="form-control" placeholder="fuel:" ><br>
+    <input type="text"[(ngModel)]="color"class="form-control" placeholder="color:"><br>
+    <button (click)="creat()"  class="btn btn-danger">creat</button>
+    <table class="table">
+        <tr *ngFor="let id of ids">
+            <td>{{id.id}}</td>
+            <td>{{id.vehicle}}</td>
+            <td>{{id.manufacturer}}</td>
+            <td>{{id.model}}</td>
+            <td>{{id.type}}</td>
+            <td>{{id.fuel}}</td>
+            <td>{{id.color}}</td>
+    
+     
+        </tr>
+    </table>
